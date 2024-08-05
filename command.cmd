@@ -8,4 +8,17 @@ node server.js
  
 - extensao thunder client
 
-node --watch server.js -> restart automático
+npm install prisma --save-dev
+npx prisma init
+
+npx prisma db push
+
+npm install @prisma/client
+
+{
+    node --watch server.js ou npm run server
+    run - npx prisma studio
+}   
+
+usada no lado do servidor para configurar o CORS(mecanismo de segurança).
+    npm install cors
